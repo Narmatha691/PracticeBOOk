@@ -9,7 +9,7 @@ namespace PracticeAPI.DTO
         public string? Author { get; set; }
         public string? Genre { get; set; }
  
-        public string? IsISBAdmin { get; set; }
+        public string? ISBN { get; set; }
         public DateTime PublishedDate { get; set; }
     }
 }

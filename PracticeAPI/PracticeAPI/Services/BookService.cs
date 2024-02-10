@@ -143,7 +143,7 @@ namespace PracticeAPI.Services
             try
             {
                 List<Book> activeMatchingBooks = context.Books
-                           .Where(p => EF.Functions.Like(p.Title, $"%{searchTerm}%"))
+                           .Where(p => EF.Functions.Like(p.Genre, $"%{searchTerm}%"))
                     .OrderByDescending(p => p.PublishedDate)
                     .ToList();
 

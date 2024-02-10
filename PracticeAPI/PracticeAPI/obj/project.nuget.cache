@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "M10L8vZTg33gyKuv6w9i7opUpS7o2fBGSwZa3HJodaRFYNP+3J0u9ZCAprgEchqLDNfSOwyd4eSu6FIGJzdCXQ==",
+  "dgSpecHash": "IiKKR6vr5o2KuFQZsEE4jpw67l9bz6LwoQXzIWWNNRSXWUuAZXd/i1NtyDwhdu8GyJu44sOTlP4VB8V3S1G4cQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\2000112465\\Desktop\\2000112465\\TweetITApp-case-study\\PracticeAPI\\PracticeAPI\\PracticeAPI.csproj",
+  "projectFilePath": "C:\\Users\\2000112465\\Desktop\\2000112465\\PracticeBOOk\\PracticeAPI\\PracticeAPI\\PracticeAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\2000112465\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\2000112465\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

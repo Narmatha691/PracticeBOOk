@@ -15,7 +15,7 @@ namespace PracticeAPI.Entities
         [Required]
         public string? Genre { get; set; }
         [Required]
-        public string? IsISBAdmin { get; set; }
+        public string? ISBN { get; set; }
         [Required]
         public DateTime PublishedDate { get; set; }
 
