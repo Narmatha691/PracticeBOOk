@@ -8,7 +8,7 @@ namespace PracticeAPI.Services
     {
         ResultModel AddBook(Book book);
         List<Book> GetAllBooks();
-        BookDTO GetBookById(int bookId);
+        Book GetBookById(int bookId);
         ResultModel DeleteBook(int bookId);
         ResultModel EditBook(Book book);
         List<BookDTO> SearchBooksByTitle(string searchTerm);

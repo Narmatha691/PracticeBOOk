@@ -73,12 +73,12 @@ namespace PracticeAPI.Controllers
         [HttpGet, Route("GetBookById/{bookId}")]
         [AllowAnonymous]
         //
-        public IActionResult GetPostById(int bookId)
+        public IActionResult GetBokById(int bookId)
         {
             try
             {
 
-                BookDTO book = bookService.GetBookById(bookId);
+                Book book = bookService.GetBookById(bookId);
                 return StatusCode(200, book);
             }
             catch (Exception ex)
@@ -112,7 +112,7 @@ namespace PracticeAPI.Controllers
                 return StatusCode(400, ex.Message);
             }
         }
-        [HttpPut, Route("EditBok")]
+        [HttpPost, Route("EditBok")]
         //[Authorize(Roles = "1")]
         public IActionResult EditBook(Book book)
         {

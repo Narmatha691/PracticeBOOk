@@ -49,7 +49,7 @@ namespace PracticeAPI.Services
 
         }
 
-        public BookDTO GetBookById(int bookId)
+        public Book GetBookById(int bookId)
         {
             try
             {
@@ -58,9 +58,9 @@ namespace PracticeAPI.Services
                 {
                     return null;
                 }
-                BookDTO book = _mapper.Map<BookDTO>(books);
+                //BookDTO book = _mapper.Map<BookDTO>(books);
 
-                return book;
+                return books;
             }
             catch (Exception)
             {
