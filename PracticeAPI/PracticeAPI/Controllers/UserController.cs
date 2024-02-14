@@ -33,7 +33,7 @@ namespace PracticeAPI.Controllers
 
 
         [HttpPost, Route("Register")]
-        //[AllowAnonymous]
+        [AllowAnonymous]
         public IActionResult AddUser(UserDTO userdto)
         {
             try
@@ -60,8 +60,7 @@ namespace PracticeAPI.Controllers
 
         }
         [HttpGet, Route("GetAllUsers")]
-        //[Authorize(Roles = "1")]
-        //
+        [Authorize(Roles = "1")]
         public IActionResult GetAllUsers()
         {
             try
@@ -78,7 +77,6 @@ namespace PracticeAPI.Controllers
 
         [HttpPost, Route("Validate")]
         [AllowAnonymous]
-        //
         public IActionResult Validate(Login login)
         {
             try

@@ -27,7 +27,7 @@ namespace PracticeAPI.Controllers
         }
 
         [HttpPost, Route("AddBook")]
-        //[Authorize(Roles = "1")]
+        [Authorize(Roles = "1")]
         public IActionResult AddBook(BookDTO bookdto)
         {
             try
@@ -72,7 +72,6 @@ namespace PracticeAPI.Controllers
 
         [HttpGet, Route("GetBookById/{bookId}")]
         [AllowAnonymous]
-        //
         public IActionResult GetBokById(int bookId)
         {
             try
@@ -89,7 +88,7 @@ namespace PracticeAPI.Controllers
         }
 
         [HttpDelete, Route("DeleteBook/{bookId}")]
-        //[Authorize(Roles = "1")]
+        [Authorize(Roles = "1")]
         public IActionResult DeletePost(int bookId)
         {
             try
@@ -113,7 +112,7 @@ namespace PracticeAPI.Controllers
             }
         }
         [HttpPost, Route("EditBok")]
-        //[Authorize(Roles = "1")]
+        [Authorize(Roles = "1")]
         public IActionResult EditBook(Book book)
         {
             try
@@ -136,7 +135,6 @@ namespace PracticeAPI.Controllers
         }
         [HttpGet, Route("SearchBookByTitle/{searchTerm}")]
         [AllowAnonymous]
-        //
         public IActionResult SearchBookByTitle(string searchTerm)
         {
             try
@@ -153,7 +151,6 @@ namespace PracticeAPI.Controllers
         }
         [HttpGet, Route("SearchBookByGenre/{searchTerm}")]
         [AllowAnonymous]
-        //
         public IActionResult SearchBookByGenre(string searchTerm)
         {
             try
